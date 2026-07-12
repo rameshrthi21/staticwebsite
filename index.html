@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acme Studio &mdash; Design that works</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#top" class="logo">Acme<span>Studio</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="siteNav">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn btn-small">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow">Digital Product Studio</p>
+      <h1>We build brands and products people actually want to use.</h1>
+      <p class="hero-sub">Acme Studio partners with small businesses to design, build, and launch websites and products that look great and perform even better.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Start a project</a>
+        <a href="#services" class="btn btn-ghost">See what we do</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="container">
+      <p class="eyebrow center">What we do</p>
+      <h2 class="section-title">Services built around your goals</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18"/><path d="M8 14h3"/></svg>
+          </div>
+          <h3>Web Design</h3>
+          <p>Clean, conversion-focused websites tailored to your brand and your customers.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 4 3 9l5 5"/><path d="M16 4l5 5-5 5"/><path d="M13 3l-2 18"/></svg>
+          </div>
+          <h3>Development</h3>
+          <p>Fast, reliable, maintainable code &mdash; from landing pages to full web apps.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          </div>
+          <h3>Strategy</h3>
+          <p>We help you figure out what to build first, and what to skip entirely.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19h16"/><path d="M7 19V9M12 19V5M17 19v-7"/></svg>
+          </div>
+          <h3>Growth</h3>
+          <p>Analytics, SEO, and ongoing support to keep your site improving over time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container about-inner">
+      <div class="about-text">
+        <p class="eyebrow">About us</p>
+        <h2 class="section-title">A small team that cares about the details</h2>
+        <p>Acme Studio is a small, independent studio. We keep our client list short so every project gets real attention &mdash; no account managers, no hand-offs, just the people actually doing the work.</p>
+        <p>We've helped dozens of small businesses go from an idea on a napkin to a site they're proud to send to customers.</p>
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-num">40+</span>
+            <span class="stat-label">Projects shipped</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">8</span>
+            <span class="stat-label">Years in business</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">98%</span>
+            <span class="stat-label">Client satisfaction</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-visual" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container contact-inner">
+      <p class="eyebrow center">Get in touch</p>
+      <h2 class="section-title center">Let's build something together</h2>
+      <p class="contact-sub">Tell us a bit about your project and we'll get back to you within a couple of days.</p>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a href="#top" class="logo">Acme<span>Studio</span></a>
+    <p class="footer-copy">&copy; <span id="year"></span> Acme Studio. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
