@@ -102,11 +102,20 @@ img { max-width: 100%; display: block; }
 }
 
 .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-weight: 800;
   font-size: 1.2rem;
   letter-spacing: -0.03em;
 }
-.logo span { color: var(--color-accent); }
+
+.logo-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
 
 .nav {
   display: flex;

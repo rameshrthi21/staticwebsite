@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-A single-page static marketing site for "Ramesh Thimmaiah", a digital product studio. Plain HTML/CSS/JS with no build step, no package manager, and no dependencies.
+A single-page static marketing site for "Shell", a digital product studio. Plain HTML/CSS/JS with no build step, no package manager, and no dependencies.
 
 ## Structure
 
