@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-A single-page static marketing site for "Mahendra", a digital product studio. Plain HTML/CSS/JS with no build step, no package manager, and no dependencies.
+A single-page static marketing site for "Sunil P", a digital product studio. Plain HTML/CSS/JS with no build step, no package manager, and no dependencies.
 
 ## Structure
 
