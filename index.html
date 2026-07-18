@@ -3,152 +3,255 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sunil P &mdash; Design that works</title>
+<title>Your Name — Cloud Platform Architect</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<header class="site-header">
-  <div class="container header-inner">
-    <a href="#top" class="logo">
-      <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true">
-        <rect x="1" y="1" width="22" height="22" rx="6" fill="currentColor"/>
-        <text x="12" y="16.5" text-anchor="middle" font-weight="800" font-size="13" fill="var(--color-bg)">S</text>
-      </svg>
-      <span class="logo-text">Sunil P</span>
-    </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <nav class="nav" id="siteNav">
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
+<nav>
+  <div class="wrap nav-inner">
+    <span class="nav-mark"><b>▙</b> YOUR-NAME / PLATFORM</span>
+    <div class="nav-links">
+      <a href="#platform">Platform</a>
+      <a href="#cases">Design records</a>
+      <a href="#skills">Capabilities</a>
+      <a href="#writing">Writing</a>
       <a href="#contact">Contact</a>
-      <a href="#contact" class="btn btn-small">Get in touch</a>
-    </nav>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <div class="blueprint"></div>
+  <div class="wrap hero">
+    <div>
+      <p class="eyebrow rise">Enterprise Cloud Platform · Architecture Portfolio</p>
+      <h1 class="rise d1">Cloud Platform<br>Architect
+        <span class="thin">I design the foundation that lets business units build safely, fast, and at scale on Azure.</span>
+      </h1>
+      <div class="hero-cta rise d2">
+        <a class="btn solid" href="#platform">Explore the platform</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <div class="spec rise d3">
+      <span class="amber">// SPEC SHEET</span><br>
+      ROLE&nbsp;&nbsp;&nbsp;&nbsp;<b>Platform Architect</b><br>
+      DOMAIN&nbsp;&nbsp;<b>Energy / Enterprise</b><br>
+      CLOUD&nbsp;&nbsp;&nbsp;<b>Microsoft Azure</b><br>
+      SCOPE&nbsp;&nbsp;&nbsp;<b>Landing zones · Governance</b><br>
+      IaC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Terraform / Bicep</b><br>
+      STATUS&nbsp;&nbsp;<b class="amber">Open to connect</b>
+    </div>
   </div>
 </header>
 
-<main id="top">
+<section id="platform">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>The platform, as a schematic</h2>
+      <span class="sec-id">FIG. 01 — LANDING ZONE TOPOLOGY</span>
+    </div>
+    <p class="lede">A live map of the enterprise cloud foundation I architect. Select any component to see the design decisions behind it.</p>
 
-  <section class="hero">
-    <div class="container hero-inner">
-      <p class="eyebrow">Digital Product Studio</p>
-      <h1>We build brands and products people actually want to use.</h1>
-      <p class="hero-sub">Sunil P partners with small businesses to design, build, and launch websites and products that look great and perform even better.</p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Start a project</a>
-        <a href="#services" class="btn btn-ghost">See what we do</a>
+    <div class="schematic-frame">
+      <div class="schematic-title">
+        <span>ENTERPRISE-SCALE · AZURE</span>
+        <span><span class="amber">REV A</span> · INTERACTIVE</span>
+      </div>
+      <div class="schematic-body">
+        <div class="svg-holder">
+          <svg viewBox="0 0 560 420" role="group" aria-label="Interactive platform architecture diagram">
+            <!-- management group bands -->
+            <rect class="mg-band" x="12" y="10" width="536" height="120" rx="6"/>
+            <text class="mg-label" x="24" y="28">MG: PLATFORM</text>
+            <rect class="mg-band" x="12" y="250" width="536" height="158" rx="6"/>
+            <text class="mg-label" x="24" y="268">MG: LANDING ZONES</text>
+
+            <!-- edges -->
+            <line class="edge" id="e-identity" x1="150" y1="95" x2="255" y2="180"/>
+            <line class="edge" id="e-mgmt" x1="410" y1="95" x2="305" y2="180"/>
+            <line class="edge" id="e-down" x1="230" y1="220" x2="90" y2="290"/>
+            <line class="edge" id="e-up" x1="260" y1="225" x2="225" y2="290"/>
+            <line class="edge" id="e-mob" x1="300" y1="225" x2="360" y2="290"/>
+            <line class="edge" id="e-corp" x1="330" y1="220" x2="480" y2="290"/>
+
+            <!-- platform nodes -->
+            <g class="node" data-k="identity" tabindex="0" role="button" aria-label="Identity and access">
+              <rect x="70" y="52" width="160" height="46"/>
+              <text x="150" y="72" text-anchor="middle">IDENTITY</text>
+              <text x="150" y="88" text-anchor="middle" class="sub">ENTRA ID · RBAC · PIM</text>
+            </g>
+            <g class="node" data-k="mgmt" tabindex="0" role="button" aria-label="Management and governance">
+              <rect x="330" y="52" width="160" height="46"/>
+              <text x="410" y="72" text-anchor="middle">GOVERNANCE</text>
+              <text x="410" y="88" text-anchor="middle" class="sub">POLICY · MONITOR · COST</text>
+            </g>
+
+            <!-- hub -->
+            <g class="node hub" data-k="hub" tabindex="0" role="button" aria-label="Connectivity hub">
+              <rect x="190" y="168" width="180" height="56"/>
+              <text x="280" y="190" text-anchor="middle">CONNECTIVITY HUB</text>
+              <text x="280" y="207" text-anchor="middle" class="sub">HUB-SPOKE · FIREWALL · DNS · ER</text>
+            </g>
+
+            <!-- landing zones -->
+            <g class="node" data-k="down" tabindex="0" role="button" aria-label="Downstream landing zone">
+              <rect x="26" y="292" width="126" height="46"/>
+              <text x="89" y="312" text-anchor="middle">DOWNSTREAM</text>
+              <text x="89" y="328" text-anchor="middle" class="sub">LZ · SPOKE</text>
+            </g>
+            <g class="node" data-k="up" tabindex="0" role="button" aria-label="Upstream landing zone">
+              <rect x="164" y="292" width="126" height="46"/>
+              <text x="227" y="312" text-anchor="middle">UPSTREAM</text>
+              <text x="227" y="328" text-anchor="middle" class="sub">LZ · SPOKE</text>
+            </g>
+            <g class="node" data-k="mob" tabindex="0" role="button" aria-label="Mobility landing zone">
+              <rect x="302" y="292" width="126" height="46"/>
+              <text x="365" y="312" text-anchor="middle">MOBILITY</text>
+              <text x="365" y="328" text-anchor="middle" class="sub">LZ · SPOKE</text>
+            </g>
+            <g class="node" data-k="corp" tabindex="0" role="button" aria-label="Corporate landing zone">
+              <rect x="440" y="292" width="100" height="46"/>
+              <text x="490" y="312" text-anchor="middle">CORP</text>
+              <text x="490" y="328" text-anchor="middle" class="sub">LZ · SPOKE</text>
+            </g>
+
+            <!-- vending -->
+            <g class="node" data-k="vending" tabindex="0" role="button" aria-label="Subscription vending">
+              <rect x="180" y="366" width="200" height="42"/>
+              <text x="280" y="384" text-anchor="middle">SUBSCRIPTION VENDING</text>
+              <text x="280" y="399" text-anchor="middle" class="sub">IaC · SELF-SERVICE · GUARDRAILS</text>
+            </g>
+          </svg>
+        </div>
+
+        <div class="detail" aria-live="polite">
+          <span class="d-id" id="d-id">COMPONENT / HUB</span>
+          <h3 id="d-title">Connectivity hub</h3>
+          <p id="d-body">The shared network core: hub-spoke topology with centralized firewalling, private DNS, and ExpressRoute back to on-premises sites. Every landing zone peers here — one control point for all north–south and east–west traffic.</p>
+          <ul id="d-list">
+            <li>Hub-spoke over vWAN — a deliberate trade-off</li>
+            <li>Centralized egress &amp; inspection</li>
+            <li>Private endpoints by default</li>
+          </ul>
+          <span class="hint">▸ Select any node in the schematic</span>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="services" class="services">
-    <div class="container">
-      <p class="eyebrow center">What we do</p>
-      <h2 class="section-title">Services built around your goals</h2>
-      <div class="cards">
-        <div class="card">
-          <div class="card-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18"/><path d="M8 14h3"/></svg>
-          </div>
-          <h3>Web Design</h3>
-          <p>Clean, conversion-focused websites tailored to your brand and your customers.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 4 3 9l5 5"/><path d="M16 4l5 5-5 5"/><path d="M13 3l-2 18"/></svg>
-          </div>
-          <h3>Development</h3>
-          <p>Fast, reliable, maintainable code &mdash; from landing pages to full web apps.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-          </div>
-          <h3>Strategy</h3>
-          <p>We help you figure out what to build first, and what to skip entirely.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19h16"/><path d="M7 19V9M12 19V5M17 19v-7"/></svg>
-          </div>
-          <h3>Growth</h3>
-          <p>Analytics, SEO, and ongoing support to keep your site improving over time.</p>
-        </div>
+<section id="cases">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Design records</h2>
+      <span class="sec-id">SELECTED ARCHITECTURE WORK</span>
+    </div>
+    <div class="cases">
+      <article class="case">
+        <span class="c-id">DR-014</span>
+        <h3>Subscription vending for business units</h3>
+        <dl>
+          <dt>Problem</dt><dd>Business units waited weeks for compliant environments, and every subscription looked different.</dd>
+          <dt>Design</dt><dd>Self-service vending pipeline in Terraform: networking, policy, RBAC, and budgets stamped in on day zero.</dd>
+          <dt>Outcome</dt><dd>Environment lead time cut from weeks to hours, with governance built in rather than bolted on.</dd>
+        </dl>
+      </article>
+      <article class="case">
+        <span class="c-id">DR-021</span>
+        <h3>Policy-driven governance at scale</h3>
+        <dl>
+          <dt>Problem</dt><dd>Manual reviews couldn't keep pace with dozens of teams deploying independently.</dd>
+          <dt>Design</dt><dd>Layered Azure Policy across management groups — deny where it matters, audit where teams need freedom.</dd>
+          <dt>Outcome</dt><dd>Compliance shifted from gatekeeping to guardrails; exceptions became data, not arguments.</dd>
+        </dl>
+      </article>
+      <article class="case">
+        <span class="c-id">DR-027</span>
+        <h3>Hybrid connectivity redesign</h3>
+        <dl>
+          <dt>Problem</dt><dd>Growing traffic between plants, offices, and cloud strained a first-generation network design.</dd>
+          <dt>Design</dt><dd>Consolidated hub with tiered firewall rules, private DNS, and clear spoke onboarding standards.</dd>
+          <dt>Outcome</dt><dd>Predictable connectivity for every new landing zone — onboarding a spoke is now a checklist, not a project.</dd>
+        </dl>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Capabilities</h2>
+      <span class="sec-id">SKILL MATRIX</span>
+    </div>
+    <div class="skills">
+      <div class="skill-cell">
+        <h4>Platform &amp; landing zones</h4>
+        <div class="tags"><span class="tag">Azure Landing Zones</span><span class="tag">Management Groups</span><span class="tag">Subscription Vending</span><span class="tag">Hub-Spoke Networking</span></div>
+      </div>
+      <div class="skill-cell">
+        <h4>Infrastructure as code</h4>
+        <div class="tags"><span class="tag">Terraform</span><span class="tag">Bicep</span><span class="tag">Azure DevOps</span><span class="tag">GitHub Actions</span></div>
+      </div>
+      <div class="skill-cell">
+        <h4>Governance &amp; security</h4>
+        <div class="tags"><span class="tag">Azure Policy</span><span class="tag">Entra ID / RBAC / PIM</span><span class="tag">Defender for Cloud</span><span class="tag">Zero Trust</span></div>
+      </div>
+      <div class="skill-cell">
+        <h4>Operations &amp; FinOps</h4>
+        <div class="tags"><span class="tag">Cost Management</span><span class="tag">Azure Monitor</span><span class="tag">Tagging Standards</span><span class="tag">Chargeback Models</span></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="about" class="about">
-    <div class="container about-inner">
-      <div class="about-text">
-        <p class="eyebrow">About us</p>
-        <h2 class="section-title">A small team that cares about the details</h2>
-        <p>Sunil P is a small, independent studio. We keep our client list short so every project gets real attention &mdash; no account managers, no hand-offs, just the people actually doing the work.</p>
-        <p>We've helped dozens of small businesses go from an idea on a napkin to a site they're proud to send to customers.</p>
-        <div class="stats">
-          <div class="stat">
-            <span class="stat-num">40+</span>
-            <span class="stat-label">Projects shipped</span>
-          </div>
-          <div class="stat">
-            <span class="stat-num">8</span>
-            <span class="stat-label">Years in business</span>
-          </div>
-          <div class="stat">
-            <span class="stat-num">98%</span>
-            <span class="stat-label">Client satisfaction</span>
-          </div>
-        </div>
+<section id="writing">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Writing &amp; talks</h2>
+      <span class="sec-id">FIELD NOTES</span>
+    </div>
+    <div class="posts">
+      <a class="post" href="#">
+        <span class="p-date">2026-06</span>
+        <span class="p-title">Why subscription vending is the product your platform team should ship first</span>
+        <span class="p-kind">LinkedIn</span>
+      </a>
+      <a class="post" href="#">
+        <span class="p-date">2026-04</span>
+        <span class="p-title">Guardrails, not gates: rethinking cloud governance for business units</span>
+        <span class="p-kind">LinkedIn</span>
+      </a>
+      <a class="post" href="#">
+        <span class="p-date">2026-02</span>
+        <span class="p-title">Lessons from running an enterprise landing zone in the energy sector</span>
+        <span class="p-kind">Talk</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Let's talk platforms.</h2>
+        <p class="lede" style="margin-bottom:0">Open to conversations about enterprise cloud foundations, platform engineering, and architecture roles.</p>
       </div>
-      <div class="about-visual" aria-hidden="true"></div>
+      <div class="hero-cta" style="margin:0">
+        <a class="btn solid" href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn" href="mailto:you@example.com">Email</a>
+      </div>
     </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <div class="container contact-inner">
-      <p class="eyebrow center">Get in touch</p>
-      <h2 class="section-title center">Let's build something together</h2>
-      <p class="contact-sub">Tell us a bit about your project and we'll get back to you within a couple of days.</p>
-
-      <form class="contact-form" id="contactForm">
-        <div class="form-row">
-          <div class="form-field">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          <div class="form-field">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-        </div>
-        <div class="form-field">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Send message</button>
-        <p class="form-status" id="formStatus" role="status"></p>
-      </form>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <a href="#top" class="logo">
-      <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true">
-        <rect x="1" y="1" width="22" height="22" rx="6" fill="currentColor"/>
-        <text x="12" y="16.5" text-anchor="middle" font-weight="800" font-size="13" fill="var(--color-bg)">S</text>
-      </svg>
-      <span class="logo-text">Sunil P</span>
-    </a>
-    <p class="footer-copy">&copy; <span id="year"></span> Sunil P. All rights reserved.</p>
-    <div class="footer-links">
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+    <div class="foot-note">
+      <span>© 2026 YOUR NAME</span>
+      <span>BUILT WITH INTENT · REV A</span>
     </div>
   </div>
 </footer>
